@@ -1,0 +1,68 @@
+import type { ELearningResource } from "@/types";
+
+export const eLearningResources: ELearningResource[] = [
+  {
+    id: "1",
+    title: "Khan Academy Khmer",
+    description: "Free world-class education in Khmer covering math, science, and more.",
+    url: "https://km.khanacademy.org",
+    category: "General",
+    icon: "GraduationCap",
+  },
+  {
+    id: "2",
+    title: "Sovannaphumi E-Library",
+    description: "Access digital textbooks, study guides, and supplementary materials.",
+    url: "#",
+    category: "Library",
+    icon: "BookOpen",
+  },
+  {
+    id: "3",
+    title: "Google Classroom",
+    description: "Join your class assignments and interact with teachers online.",
+    url: "https://classroom.google.com",
+    category: "Classroom",
+    icon: "Laptop",
+  },
+  {
+    id: "4",
+    title: "MoEYS E-Learning",
+    description: "Official Ministry of Education e-learning platform for Cambodian students.",
+    url: "https://elearning.moeys.gov.kh",
+    category: "Government",
+    icon: "Building",
+  },
+  {
+    id: "5",
+    title: "Duolingo English",
+    description: "Practice English language skills with fun, game-like lessons.",
+    url: "https://www.duolingo.com",
+    category: "Language",
+    icon: "Globe",
+  },
+  {
+    id: "6",
+    title: "National Geographic Kids",
+    description: "Explore science, nature, and the world through interactive content.",
+    url: "https://kids.nationalgeographic.com",
+    category: "Science",
+    icon: "Microscope",
+  },
+  {
+    id: "7",
+    title: "Math is Fun",
+    description: "Interactive math lessons, games, and puzzles for all grade levels.",
+    url: "https://www.mathsisfun.com",
+    category: "Math",
+    icon: "Calculator",
+  },
+  {
+    id: "8",
+    title: "Scratch Programming",
+    description: "Learn coding through creative projects and interactive stories.",
+    url: "https://scratch.mit.edu",
+    category: "Technology",
+    icon: "Code",
+  },
+];

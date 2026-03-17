@@ -1,0 +1,15 @@
+import type { Metadata } from "next";
+import { StaffListPage } from "@/components/pages/staff-list-page";
+
+export const metadata: Metadata = { title: "Operation — Guard Staff" };
+
+export default function Page() {
+  return (
+    <StaffListPage
+      department="operation"
+      departmentKh="ប្រតិបត្តិការ"
+      level="guard"
+      levelKh="សន្តិសុខ"
+    />
+  );
+}
