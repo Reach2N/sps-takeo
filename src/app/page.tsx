@@ -174,19 +174,17 @@ export default function HomePage() {
               <Button
                 size="lg"
                 className="bg-brand-gold text-brand-blue-800 hover:bg-brand-gold-400"
-                asChild
+                render={<Link href="/programs" />}
               >
-                <Link href="/programs">
-                  Explore Programs <ChevronRight className="ml-1 h-4 w-4" />
-                </Link>
+                Explore Programs <ChevronRight className="ml-1 h-4 w-4" />
               </Button>
               <Button
                 size="lg"
                 variant="outline"
                 className="border-white/30 text-white hover:bg-white/10"
-                asChild
+                render={<Link href="/contact" />}
               >
-                <Link href="/contact">Contact Us</Link>
+                Contact Us
               </Button>
             </div>
           </div>
@@ -352,10 +350,8 @@ export default function HomePage() {
                 ព័ត៌មានថ្មីៗ
               </p>
             </div>
-            <Button variant="outline" asChild className="hidden sm:flex">
-              <Link href="/news">
-                View All <ChevronRight className="ml-1 h-4 w-4" />
-              </Link>
+            <Button variant="outline" className="hidden sm:flex" render={<Link href="/news" />}>
+              View All <ChevronRight className="ml-1 h-4 w-4" />
             </Button>
           </div>
 
@@ -394,10 +390,8 @@ export default function HomePage() {
           </div>
 
           <div className="mt-6 text-center sm:hidden">
-            <Button variant="outline" asChild>
-              <Link href="/news">
-                View All News <ChevronRight className="ml-1 h-4 w-4" />
-              </Link>
+            <Button variant="outline" render={<Link href="/news" />}>
+              View All News <ChevronRight className="ml-1 h-4 w-4" />
             </Button>
           </div>
         </div>

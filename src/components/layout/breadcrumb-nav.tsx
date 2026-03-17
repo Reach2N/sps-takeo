@@ -51,11 +51,9 @@ export function BreadcrumbNav() {
     <Breadcrumb>
       <BreadcrumbList>
         <BreadcrumbItem>
-          <BreadcrumbLink asChild>
-            <Link href="/" className="flex items-center gap-1">
-              <Home className="h-3.5 w-3.5" />
-              <span className="sr-only">Home</span>
-            </Link>
+          <BreadcrumbLink render={<Link href="/" />} className="flex items-center gap-1">
+            <Home className="h-3.5 w-3.5" />
+            <span className="sr-only">Home</span>
           </BreadcrumbLink>
         </BreadcrumbItem>
 
@@ -71,8 +69,8 @@ export function BreadcrumbNav() {
                 {isLast ? (
                   <BreadcrumbPage>{label}</BreadcrumbPage>
                 ) : (
-                  <BreadcrumbLink asChild>
-                    <Link href={href}>{label}</Link>
+                  <BreadcrumbLink render={<Link href={href} />}>
+                    {label}
                   </BreadcrumbLink>
                 )}
               </BreadcrumbItem>

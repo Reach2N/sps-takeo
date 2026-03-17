@@ -13,11 +13,9 @@ export default function NotFound() {
         The page you&apos;re looking for doesn&apos;t exist or has been moved.
       </p>
       <div className="mt-8 flex gap-4">
-        <Button asChild>
-          <Link href="/">Go Home</Link>
-        </Button>
-        <Button variant="outline" asChild>
-          <Link href="/contact">Contact Us</Link>
+        <Button render={<Link href="/" />}>Go Home</Button>
+        <Button variant="outline" render={<Link href="/contact" />}>
+          Contact Us
         </Button>
       </div>
     </div>

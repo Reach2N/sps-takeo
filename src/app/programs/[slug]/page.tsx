@@ -130,11 +130,9 @@ export default async function ProgramDetailPage({ params }: { params: Params }) 
             Contact us to learn more about enrollment and admission requirements.
           </p>
           <div className="mt-6 flex justify-center gap-4">
-            <Button asChild>
-              <Link href="/contact">Contact Us</Link>
-            </Button>
-            <Button variant="outline" asChild>
-              <Link href="/programs">All Programs</Link>
+            <Button render={<Link href="/contact" />}>Contact Us</Button>
+            <Button variant="outline" render={<Link href="/programs" />}>
+              All Programs
             </Button>
           </div>
         </div>

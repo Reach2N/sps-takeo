@@ -34,10 +34,8 @@ export default async function NewsDetailPage({ params }: { params: Params }) {
       <PageHeader title={post.title} titleKh={post.titleKh} />
 
       <div className="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:px-8">
-        <Button variant="ghost" size="sm" asChild className="mb-6">
-          <Link href="/news">
-            <ArrowLeft className="mr-1 h-4 w-4" /> Back to News
-          </Link>
+        <Button variant="ghost" size="sm" className="mb-6" render={<Link href="/news" />}>
+          <ArrowLeft className="mr-1 h-4 w-4" /> Back to News
         </Button>
 
         <div className="flex items-center gap-3">
@@ -68,11 +66,11 @@ export default async function NewsDetailPage({ params }: { params: Params }) {
         <Separator className="my-8" />
 
         <div className="flex justify-between">
-          <Button variant="outline" asChild>
-            <Link href="/news">All News</Link>
+          <Button variant="outline" render={<Link href="/news" />}>
+            All News
           </Button>
-          <Button asChild>
-            <Link href="/contact">Contact Us</Link>
+          <Button render={<Link href="/contact" />}>
+            Contact Us
           </Button>
         </div>
       </div>
